@@ -5,6 +5,6 @@ let drawTriangle: string = "*";
 
 for (let i:number = 1; i<=lineCount; i++) {
     console.log(drawTriangle);
-    drawTriangle = drawTriangle + "*";
+    drawTriangle = lineCount* drawTriangle + "*";
 }
 
