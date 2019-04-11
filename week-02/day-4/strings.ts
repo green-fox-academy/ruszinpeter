@@ -1,3 +1,4 @@
+
 'use string'
 
 /*Given a string, compute recursively (no loops) a new string 
@@ -14,4 +15,3 @@ function changeString(newString: string):string {
     }
 }
 console.log(changeString("xuiuisacxzaxfa"));
-
