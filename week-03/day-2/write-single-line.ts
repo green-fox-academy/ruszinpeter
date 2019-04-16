@@ -7,7 +7,7 @@
 function writeSL(myfile: string) {
   try {
     const fs = require('fs');
-  let newContent: string = 'Peter3';
+  let newContent: string = 'Peter4';
   let fileContent = fs.writeFileSync(myfile,newContent);
   return myfile;
   }
@@ -15,4 +15,4 @@ function writeSL(myfile: string) {
     console.log('Unable to write file:', myfile);
   }
 }
-console.log(writeSL('my-file.txt'));
+console.log(writeSL('my-file3.txt'));
