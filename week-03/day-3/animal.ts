@@ -8,6 +8,28 @@ Every animal can drink() which decreases their thirst by one
 Every animal can play() which increases both by one */
 
 class Animal {
-  hunger: number = 
+  hunger: number;
+  thirst: number;
 
+  constructor(hunger: number = 50, thirst: number = 50) {
+    this.hunger = hunger;
+    this.thirst = thirst;
+  }
+  public eat(): number {
+    return this.hunger -= 1;
+  }
+
+  public drink(): number {
+    return this.thirst -= 1;
+  }
+  play(): number {
+    return this.hunger += 1, this.thirst += 1;
+  }
 }
+
+const firstAnimal: Animal = new Animal();
+const secondAnimal: Animal = new Animal();
+firstAnimal.play();
+firstAnimal.play();
+firstAnimal.drink();
+console.log(firstAnimal);
