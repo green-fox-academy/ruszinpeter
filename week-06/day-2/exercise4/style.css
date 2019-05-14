@@ -1,17 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .content {
     width: 100vw;
     height: 100vw;
     display: flex;
+    justify-content: center;
 }
 
 .main-content {
     background: yellow;
-    width: 75vw;
+    width: 60vw;
+    justify-content: center;
+    margin: 10px;
 }
 
 .sidebar {
     background: lightgreen;
-    width: 25vw;
+    width: 20vw;
+    margin: 10px;
+    margin-left: 0;
 }
 
 .navigation-links {
@@ -30,4 +40,21 @@ li {
     width: 100px;
     height: 35px;
     margin-right: 20px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    background: grey;
+    width: calc(80vw + 10px);
+    height: 50px;
 }
