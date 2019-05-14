@@ -1,6 +1,4 @@
 .boxes {
-    width: 100%;
-    margin: 0 auto;
     display: flex;
 }
 
@@ -11,12 +9,15 @@
 
 .one {
     background: lightgreen;
+    flex-grow: 1;
 }
 
 .two {
     background: yellow;
+    flex-grow: 2;
 }
 
 .three {
     background: purple;
+    flex-grow: 1;
 }
