@@ -1,0 +1,14 @@
+.boxes {
+    display: flex;
+    width: 755px;
+    height: 280px;
+    background: orange;
+    align-items: center;
+    justify-content: center;
+}
+
+.one {
+    height: 107px;
+    width: 107px;
+    background: purple;
+}
