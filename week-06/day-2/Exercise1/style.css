@@ -1,24 +1,30 @@
 .boxes {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    width: 500px;
+    border: 5px solid red;
+    height: 800px;
 }
 
 .box {
     height: 189px;
-    width: 189px;
+    width: auto;
 }
 
 .one {
     background: lightgreen;
     flex-grow: 1;
+    order: 1;
 }
 
 .two {
     background: yellow;
     flex-grow: 2;
+    order: 3;
 }
 
 .three {
     background: purple;
     flex-grow: 1;
+    order: 2;
 }
