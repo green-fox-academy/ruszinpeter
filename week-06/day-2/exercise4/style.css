@@ -1,0 +1,33 @@
+.content {
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+}
+
+.main-content {
+    background: yellow;
+    width: 75vw;
+}
+
+.sidebar {
+    background: lightgreen;
+    width: 25vw;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    background: purple;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    background: turquoise;
+    width: 100px;
+    height: 35px;
+    margin-right: 20px;
+}
