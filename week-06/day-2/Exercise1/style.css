@@ -1,0 +1,22 @@
+.boxes {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.box {
+    height: 189px;
+    width: 189px;
+}
+
+.one {
+    background: lightgreen;
+}
+
+.two {
+    background: yellow;
+}
+
+.three {
+    background: purple;
+}
