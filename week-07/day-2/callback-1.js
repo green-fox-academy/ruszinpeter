@@ -28,7 +28,6 @@ const mapWith = (array, callback) => {
     let output = [];
     for (let i = 0; i < array.length; i++) {
         output.push(callback(array[i]))
-
     }
     return output;
 }
@@ -40,7 +39,6 @@ const removeSecondLetter = (string) => {
         if (i % 2 === 0) {
             resultString += string[i];
         }
-
     }
     return resultString;
 }
