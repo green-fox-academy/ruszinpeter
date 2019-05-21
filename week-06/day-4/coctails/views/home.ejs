@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Coctails</title>
+</head>
+
+<body>
+    <h1>Cocktails</h1>
+    
+        <%
+    list.forEach(e => { %>
+            <a>
+                <%=e.toUpperCase()%>
+            </a>
+            <%});%>
+<table style="width:50%">
+  <tr>
+    <th>NAME</th>
+    <th>PRICE</th> 
+  </tr>
+  <tr>
+ 
+    <% drinks.map(e=>{%>
+       <td>
+      <%= e.name %><br>
+      <%= e.contains %>                      
+    </td>
+    <td>
+    <%= e.price %>
+	</td>
+  </tr>
+    <% }); %>
+</table>
+
+</body>
+
+</html>
+
+</html>
