@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const PORT = 8080;
+app.use(express.json());
 
 app.use(express.static('assets'))
 app.set('view engine');
@@ -36,6 +37,35 @@ app.get('/greeter', (req, res) => {
     console.log(inputName);
     console.log(inputTitle);
     res.send(answer);
+})
+
+app.get('/appenda/:id', (req, res) => {
+    let appendname = req.params.id;
+    if (!req.params) {
+        res.sendStatus('404');
+    } else {
+        res.send({ "appended": appendname + 'a' })
+    }
+    console.log(appendname);
+})
+
+app.post('/dountil/sum', (req, res) => {
+    let answer = {};
+    let number = req.body.until
+    for (let i = 0; i < req.body.until; i++) {
+        number += i;
+    }
+    answer = { result: number }
+    res.send(answer)
+})
+app.post('/dountil/factor', (req, res) => {
+    let answer = {};
+    let number = req.body.until
+    for (let i = 1; i < req.body.until; i++) {
+        number *= i;
+    }
+    answer = { result: number }
+    res.send(answer)
 })
 
 app.listen(PORT, () => {
