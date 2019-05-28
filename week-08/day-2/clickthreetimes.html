@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Click three times</title>
+</head>
+
+<body>
+    <button>Button    </button>
+    <script>
+        const button = document.querySelector('button');
+        let resultText = document.createElement('H1');
+        let counter = 0;
+
+        window.onload = function() {
+            setInterval(function() {
+                button.addEventListener('click', () => {
+                    counter++;
+                    if (counter === 3) {
+                        resultText.innerText = '5 seconds elapsed and clicked 3 times';
+                        document.querySelector('body').appendChild(resultText);
+                    };
+                });
+            }, 5000)
+        }
+    </script>
+</body>
+
+</html>
