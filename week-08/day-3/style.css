@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    background-color: lightgrey;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    width: 30%;
+    height: 400px;
+    padding: 50px;
+    margin: 50px;
+    background-color: white;
+}
+
+h2 {
+    display: flex;
+}
+
+input {
+    height: 2rem;
+}
+
+label {
+    font-size: 10px;
+    display: flex;
+    padding: 6px;
+}
+
+#login {
+    height: 35px;
+    width: 100px;
+    background-color: black;
+    border-radius: 3rem;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 10px;
+}
+
+#username,
+#password {
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+a {
+    font-size: 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    justify-content: flex-end;
+}
