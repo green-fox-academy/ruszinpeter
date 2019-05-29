@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Button Disable</title>
+    <link rel="stylesheet" type="text/css" href=".\style2.css">
+</head>
+
+<body>
+    <form>
+        <div class="petselector">
+            <h3>What is your favourite pet?</h3>
+            <label for="dog">dog</label>
+            <input type="radio" name="pet" value="Dog" id="dog" />
+            <label for="cat">cat</label>
+            <input type="radio" name="pet" value="Cat" id="cat" />
+            <label for="fish">Viktor the goldfish</label>
+            <input type="radio" name="pet" value="Viktor the goldfish" id="fish" />
+        </div>
+        <h3>Do you want to sign up for cat facts?</h3>
+        <label for="signup">Yes</label>
+        <input type="radio" name="signup" value="yes" id="yesbutton" />
+        <label for="signup">No</label>
+        <input type="radio" name="signup" value="no" id="nobutton" />
+        <dev class="buttons">
+            <input type="submit" disabled value="I love cats" id="catbutton" onclick="myFunction()" />
+            <input type="submit" disabled value="Sign up" id="signupbutton" />
+        </dev>
+    </form>
+    <script>
+        document.querySelector("#dog").addEventListener("click", () => {
+            document.querySelector('#signupbutton').removeAttribute('disabled');
+        });
+
+        document.querySelector("#yesbutton").addEventListener("click", () => {
+            document.querySelector('#catbutton').removeAttribute('disabled');
+        });
+
+        function myFunction() {
+            alert("Thank you, you've successfully signed up for cat facts");
+        }
+    </script>
+</body>
+
+</html>
