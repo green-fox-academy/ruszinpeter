@@ -1,0 +1,54 @@
+.boxes {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 50vh;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    justify-content: center;
+    height: 189px;
+    width: auto;
+}
+
+.one {
+    background: lightgreen;
+    flex-grow: 1;
+    order: 1;
+}
+
+.two {
+    background: yellow;
+    flex-grow: 2;
+    order: 3;
+}
+
+.three {
+    background: purple;
+    flex-grow: 1;
+    order: 2;
+}
+
+@media (max-width: 500px) {
+    .boxes {
+        flex-direction: row;
+    }
+    .box {
+        height: 60px;
+    }
+    .one {
+        order: 3;
+    }
+    .two {
+        order: 2;
+    }
+    .three {
+        order: 1;
+    }
+}
