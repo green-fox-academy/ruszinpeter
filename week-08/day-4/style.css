@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+    background-color: royalblue;
+    font-family: Roboto;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+td,
+th {
+    border: 1px solid #999;
+    padding: 1rem;
+    text-align: left;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+}
+
+thead tr {
+    background-color: black;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background: gray;
+}
+
+tbody tr:nth-child(even) {
+    background: white;
+}
+
+.salary::before {
+    content: '$ ';
+}
